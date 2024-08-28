@@ -12,32 +12,32 @@
        <img src="./assets/Logo.png" alt="logo de alura latam">
     
         <main class="contenedor">
-            <section class="contenedor__encriptador">
-                <div class="contenedor__encriptador__area">
-                    <!-- Área de texto para entrada -->
-                    <textarea id="inputTexto" class="texto" type="text" placeholder="Ingresa el texto aqui"></textarea>
-                </div>
+            <div class="contenedor__encriptar">
+                <!-- Área de texto para entrada -->
+                <textarea id="inputTexto" class="texto" type="text" placeholder="Ingresa el texto aqui"></textarea>
+            </div>
 
-                    <p>Solo letras minisculas y sin acentos</p>
+            <div class="contenedor__terminos">
+                <p class="terminos__parrafo">Solo letras minisculas y sin acentos</p>
+            </div>                    
 
+            <div class="contenedor__button">
+                <button class="btn__button" onclick="encriptarTexto();">Encriptar</button>
+                <button class="btn__button" onclick="desencriptarTexto();">Desencriptar</button>
+            </div>   
+            
+            <section class="encriptado">
                 <div>
-                    <button onclick="encriptarTexto();" class="">Encriptar</button>
-                    <button onclick="desencriptarTexto();" class="">Desencriptar</button>
+                    <textarea id="resultadoTexto" readonly></textarea>
                 </div>
-            </section>            
-        </main>
-
-        <aside class="contenedor__visual">
-            <div>
-                <textarea id="resultadoTexto" readonly></textarea>
-            </div>
-            <img src="./assets/Muñeco.png" alt="">
-            <div>
-                <h2>Nigun mensaje fue encontrado</h2>
-                <p>Ingresa el texto que deseas encriptar o desencriptar</p>
-                <button onclick="copiarTexto();">Copiar</button>
-            </div>
-        </aside>      
+                    <img src="./assets/Muñeco.png" alt="">
+                <div>
+                    <h2>Nigun mensaje fue encontrado</h2>
+                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                    <button onclick="copiarTexto();">Copiar</button>
+                </div>
+            </section>
+        </main>      
     <script src="./scripts/encriptador.js"></script>
 </body>    
 </html>

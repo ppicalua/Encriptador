@@ -11,15 +11,59 @@ body {
 }
 
 .contenedor {
-    display: flex;
-    justify-content: space-between;    
+    position: relative;
+    width: 100vw;
+    height: 100vh; 
 }
 
-.contenedor__encriptador {
-    width: 50%;
-}
-
-.contenedor__visual {
+.texto {
+    background-color: #F3F5FC;
     position: absolute;
-    background-color: #FFFFFF;
+    width: 42%;
+    height: 60%;
+    left: 12%;
+    top: 15%;
+    border: none;
+    font-family: "Inter", sans-serif;
+    font-size: 2rem;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #0A3871;
+}
+
+.texto::placeholder {
+    color: #0A3871;
+}
+
+.texto:focus,
+.texto:active {
+    border: none;
+    outline: none;
+}
+
+.contenedor__terminos {
+    display: flex;    
+    align-items: center;
+    gap: 0.5rem;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 80%;
+}
+
+.terminos__parrafo {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #495057;
+}
+
+.contenedor__button {
+    display: flex;
+    align-items: flex-start;
+    padding: 1% 0;
+    position: absolute;
+    width: 80%;
+    left: 12%;
+    top: 82%;
 }
