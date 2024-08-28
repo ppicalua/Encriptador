@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: #F3F5FC;
+}
+
+.contenedor {
+    display: flex;
+    justify-content: space-between;    
+}
+
+.contenedor__encriptador {
+    width: 50%;
+}
+
+.contenedor__visual {
+    position: absolute;
+    background-color: #FFFFFF;
+}
