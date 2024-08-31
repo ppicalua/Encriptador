@@ -6,35 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador</title>
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/style2.css">
 </head>
 
 <body>
-       <img src="./assets/Logo.png" alt="logo de alura latam">
+       <img class="header__logo" src="./assets/Logo.png" alt="logo de alura latam">
     
         <main class="contenedor">
-            <div class="contenedor__encriptar">
-                <!-- Área de texto para entrada -->
-                <textarea id="inputTexto" class="texto" type="text" placeholder="Ingresa el texto aqui"></textarea>
-            </div>
+            <section class="contendor__encriptar">
+                <div class="contenedor__encriptar__texto">
+                    <!-- Área de texto para entrada -->
+                    <textarea id="inputTexto" class="texto__encriptar" type="text" placeholder="Ingresa el texto aqui"></textarea>
+                </div>
 
-            <div class="contenedor__terminos">
-                <p class="terminos__parrafo">Solo letras minisculas y sin acentos</p>
-            </div>                    
+                <div class="contenedor__encriptar__informativo">
+                    <!-- Icono de advertencia y mensaje para el usuario -->
+                    <img src="assets/Group.png" alt="imagen informativa">
+                    <p class="informativo__parrafo">Solo letras minisculas y sin acentos</p>
+                </div>                    
 
-            <div class="contenedor__button">
-                <button class="btn__button" onclick="encriptarTexto();">Encriptar</button>
-                <button class="btn__button" onclick="desencriptarTexto();">Desencriptar</button>
-            </div>   
+                <div class="contenedor__encriptar__button">
+                    <!-- Botones de encriptar y desencriptar -->
+                    <button class="btn__encriptar" onclick="encriptarTexto();">Encriptar</button>
+                    <button class="btn__desencriptar" onclick="desencriptarTexto();">Desencriptar</button>
+                </div>
+            </section>   
             
-            <section class="encriptado">
-                <div>
+            <section class="contendor__encriptado">
+               <!-- 
+                <div class="contenedor__encriptado__salida">
                     <textarea id="resultadoTexto" readonly></textarea>
                 </div>
-                    <img src="./assets/Muñeco.png" alt="">
-                <div>
-                    <h2>Nigun mensaje fue encontrado</h2>
-                    <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                -->
+                    <img class="contendor__encriptado__img" src="./assets/Muñeco.png" alt="dibujo de persona con lupa observando diamante">
+                    
+                <div class="contenedor__encriptado__texto">
+                    <h2 class="encriptado__texto">Nigun mensaje fue encontrado</h2>
+                    <p class="encriptado__parrafo">Ingresa el texto que deseas encriptar o desencriptar.</p>
+                    <!--
                     <button onclick="copiarTexto();">Copiar</button>
+                    -->
                 </div>
             </section>
         </main>      

@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+.contendor__encriptado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center;     
+    width: 25rem;
+    height: 59rem;    
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    margin: 40px 40px 40px 0;
+    box-shadow: 0 24px 32px -8px rgb(0, 0, 0, 0.08);
+    /*Estilos y posicionamiento de la seccion
+    donde se visualizara el resultado*/
+}
+
+.contendor__encriptado__img {
+    width: 21rem;
+    height: 19.125rem;
+}
+
+.contenedor__encriptado__texto {
+    width: 21rem;
+    margin-top: 2rem;
+}
+
+.encriptado__texto {
+    font-family: "Inter", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: #343A40;
+}
+
+.encriptado__parrafo {
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    color: #495057;
+    margin-top: 1rem;
+}
+
+@media (max-width: 768px){
+    .contenedor {       
+        flex-direction: column;
+    }
+
+    .contenedor__encriptar__informativo {
+       display: flex;       
+       align-items: start;   
+       margin: 0;     
+    }
+
+    .contenedor__encriptar__button {
+        align-items: flex-start;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 43%;
+        padding: 1%;          
+    }
+}

@@ -3,67 +3,148 @@
 * {
     padding: 0;
     margin: 0;
+    /*Estilos globales
+    quita el margen y padding por defecto*/
 }
 
 body {
-    box-sizing: border-box;
+    box-sizing: border-box;  /*Ajusta el ancho y alto de todos los elmentos hijos*/
     background-color: #F3F5FC;
+    width: 90rem;
+    height: 64rem;    
+    margin: auto;  /*Centra el contenido*/
 }
 
-.contenedor {
-    position: relative;
-    width: 100vw;
-    height: 100vh; 
-}
-
-.texto {
-    background-color: #F3F5FC;
+.header__logo {
     position: absolute;
-    width: 42%;
-    height: 60%;
-    left: 12%;
-    top: 15%;
+    width: 7.5rem;
+    margin: 40px 0 0 40px;
+    /*Posiciona la caja que contiene
+    el logo (<img>) en la esquina superior
+    izquierda*/
+}
+
+.contenedor {   
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    /*Toma toda el espacio ancho y alto
+    del contenido pirncipal (<main>) y ubica
+    las secciones a los estremos*/
+}
+
+.contendor__encriptar {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    /*Coloca el ancho, alto y posiciona 
+    la seccion donde se igresara y encriptara 
+    el texto*/
+}
+
+.contenedor__encriptar__texto {
+    width: 100%;
+    height: 80%;
+    /*Toma un 100% del ancho y un 80%
+    del alto, del area de la clase 
+    .contendor__encriptar*/
+}
+
+/*Estilos del elemento <textarea>*/
+.texto__encriptar {
+    background-color: #F3F5FC;    
+    width: 65%;
+    height: 78%;
+    margin-left: 15rem;
+    margin-top: 10.5rem;    
     border: none;
     font-family: "Inter", sans-serif;
     font-size: 2rem;
     font-weight: 400;
     font-size: 2rem;
-    color: #0A3871;
+    color: #0A3871;    
 }
 
-.texto::placeholder {
+.texto__encriptar::placeholder {
     color: #0A3871;
+    /*Da el color al texto
+    de la propieda placeholder*/
 }
 
-.texto:focus,
-.texto:active {
+.texto__encriptar:focus,
+.texto__encriptar:active {
     border: none;
     outline: none;
+    /*Quita el borde al pasar
+    el mause por elemnto <textarea>
+    en pantalla*/
 }
 
-.contenedor__terminos {
+/*Estilos Para el elemnto padre del parrafo*/
+.contenedor__encriptar__informativo {
+    margin-top: 1.8rem;
+    margin-left: 15rem;
     display: flex;    
-    align-items: center;
-    gap: 0.5rem;
-    position: absolute;
-    width: 80%;
-    left: 12%;
-    top: 80%;
+    align-items: start;
+    gap: 0.5rem;            
 }
 
-.terminos__parrafo {
+/*Estilos para el elemnto <p>*/
+.informativo__parrafo {    
     font-family: "Inter", sans-serif;
     font-size: 1rem;
     font-weight: 400;
-    color: #495057;
+    color: #495057;    
 }
 
-.contenedor__button {
+/*Estilo para el elemento padre que 
+contiene a los elementos <Button>*/
+.contenedor__encriptar__button {
     display: flex;
     align-items: flex-start;
-    padding: 1% 0;
-    position: absolute;
-    width: 80%;
-    left: 12%;
-    top: 82%;
+    gap: 1.5rem;
+    width: 42.5rem;
+    padding: 1%; 
+    margin-left: 15rem;        
+}
+
+/*Estilos del boton encriptar*/
+.btn__encriptar {
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    padding: 1.5rem;
+    width: 20.5rem;  
+    background-color: #0A3871; 
+    border-radius: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+/*Estilos del boton desencriptar*/
+.btn__desencriptar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    width: 20.5rem;  
+    background-color: #D8DFE8; 
+    border-radius: 1.5rem;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #0A3871;
+}
+
+/*Efecto de animado de bontones*/
+.btn__encriptar:hover,
+.btn__desencriptar:hover {
+    margin: 0.3%;
+    width: 20.4rem;
+    padding: 1.4rem;
+    cursor: pointer;
 }
